@@ -1,3 +1,24 @@
+var pixelSizeInput = document.querySelector('#pixelSizeInput');
+var resolutionInput = document.querySelector('#resolutionInput');
+
+
+
+pixelSizeInput.addEventListener('input', function() {
+  if (Number(pixelSizeInput.value)) {
+    pixelSize = Number(pixelSizeInput.value);
+    resolutionInput.value = Math.round(image.width / pixelSize);
+  }
+});
+
+resolutionInput.addEventListener('input', function() {
+  if (Number(resolutionInput.value)) {
+    pixelSize = Math.round(image.width / Number(resolutionInput.value));
+    pixelSizeInput.value = pixelSize;
+  }
+});
+
+
+
 var canvas = document.querySelector('canvas');
 var ctx = canvas.getContext('2d');
 
