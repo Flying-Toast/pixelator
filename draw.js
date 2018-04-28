@@ -47,6 +47,7 @@ function averageColor(x, y, width, height) {
 var pixelSize = 10;
 
 function draw() {
+  ctx.imageSmoothingEnabled = false;
   ctx.fillStyle = '#c1c1c1';
   ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
