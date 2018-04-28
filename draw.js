@@ -6,7 +6,7 @@ var resolutionInput = document.querySelector('#resolutionInput');
 pixelSizeInput.addEventListener('input', function() {
   if (Number(pixelSizeInput.value)) {
     pixelSize = Number(pixelSizeInput.value);
-    resolutionInput.value = Math.round(image.width / pixelSize);
+    resolutionInput.value = Math.ceil(image.width / pixelSize);
   }
 });
 
