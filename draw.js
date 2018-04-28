@@ -1,23 +1,28 @@
 var pixelSizeInput = document.querySelector('#pixelSizeInput');
 var resolutionInput = document.querySelector('#resolutionInput');
+var imageSelect = document.querySelector('#imageSelect');
 
 pixelSizeInput.value = 10;
-resolutionInput.value = 0;
+resolutionInput.value = 1;
+imageSelect.value = 'images/toast.png';
 
 pixelSizeInput.addEventListener('input', function() {
-  if (Number(pixelSizeInput.value)) {
+  if (Number(pixelSizeInput.value) > 0) {
     pixelSize = Number(pixelSizeInput.value);
     resolutionInput.value = Math.ceil(image.width / pixelSize);
   }
 });
 
 resolutionInput.addEventListener('input', function() {
-  if (Number(resolutionInput.value)) {
+  if (Number(resolutionInput.value) > 0) {
     pixelSize = Math.round(image.width / Number(resolutionInput.value));
     pixelSizeInput.value = pixelSize;
   }
 });
 
+imageSelect.addEventListener('input', function() {
+  image.src = imageSelect.value;
+});
 
 
 var canvas = document.querySelector('canvas');

@@ -13,12 +13,21 @@
 
     <span id='pixelSizeInputWrapper'>
       <label for="pixelSizeInput">Pixel Size:</label>
-      <input id='pixelSizeInput' type="number" value='10'>
+      <input id='pixelSizeInput' type="number" value='10' min='1'>
     </span>
 
     <span id='resolutionInputWrapper'>
       <label for="resolutionInput">Resolution:</label>
-      <input id='resolutionInput' type="number">
+      <input id='resolutionInput' type="number" min='1'>
+    </span>
+
+    <span id="imageSelectWrapper">
+      <label for="imageSelect">Image:</label>
+      <select id='imageSelect'>
+        <option value="images/toast.png" selected>Flying-Toast</option>
+        <option value="images/pizza.png">Pizza</option>
+        <option value="images/kitten.jpeg">Kitten</option>
+      </select>
     </span>
 
   </div>
