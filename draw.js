@@ -1,7 +1,8 @@
 var pixelSizeInput = document.querySelector('#pixelSizeInput');
 var resolutionInput = document.querySelector('#resolutionInput');
 
-
+pixelSizeInput.value = 10;
+resolutionInput.value = 0;
 
 pixelSizeInput.addEventListener('input', function() {
   if (Number(pixelSizeInput.value)) {
