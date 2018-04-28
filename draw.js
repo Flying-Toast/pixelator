@@ -44,7 +44,7 @@ function averageColor(x, y, width, height) {
 }
 
 
-var pixelSize = 50;
+var pixelSize = 10;
 
 function draw() {
   ctx.fillStyle = '#c1c1c1';
