@@ -15,7 +15,7 @@ window.addEventListener('resize', function() {
 });
 
 var image = new Image();
-image.src = 'images/norris.jpg';
+image.src = 'images/toast.png';
 
 var imageCanvas = document.createElement('canvas');
 imageCanvas.width = window.innerWidth;
