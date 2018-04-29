@@ -16,5 +16,6 @@ input[type='number'] {
 }
 
 #controls {
+  margin-top: 1em;
   text-align: center;
 }

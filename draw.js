@@ -3,7 +3,7 @@ var resolutionInput = document.querySelector('#resolutionInput');
 var imageSelect = document.querySelector('#imageSelect');
 
 pixelSizeInput.value = 10;
-resolutionInput.value = 1;
+resolutionInput.value = '';
 imageSelect.value = 'images/toast.png';
 
 pixelSizeInput.addEventListener('input', function() {
